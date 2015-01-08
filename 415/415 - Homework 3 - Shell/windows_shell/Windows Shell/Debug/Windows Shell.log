@@ -1,0 +1,18 @@
+﻿Build started 12/2/2014 9:54:46 PM.
+     1>Project "C:\Users\rusky\Dropbox\Fall 2014\415\415 - Homework 3 - Shell\windows_shell\Windows Shell\Windows Shell.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         Microsoft (R) C/C++ Optimizing Compiler Version 18.00.30501 for x86
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         cl /c /ZI /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         
+         main.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\rusky\Dropbox\Fall 2014\415\415 - Homework 3 - Shell\windows_shell\Debug\Windows Shell.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\rusky\Dropbox\Fall 2014\415\415 - Homework 3 - Shell\windows_shell\Debug\Windows Shell.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\rusky\Dropbox\Fall 2014\415\415 - Homework 3 - Shell\windows_shell\Debug\Windows Shell.lib" /MACHINE:X86 Debug\main.obj
+         Windows Shell.vcxproj -> C:\Users\rusky\Dropbox\Fall 2014\415\415 - Homework 3 - Shell\windows_shell\Debug\Windows Shell.exe
+     1>Done Building Project "C:\Users\rusky\Dropbox\Fall 2014\415\415 - Homework 3 - Shell\windows_shell\Windows Shell\Windows Shell.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.46

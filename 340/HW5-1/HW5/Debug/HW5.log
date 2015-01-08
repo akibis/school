@@ -1,0 +1,27 @@
+﻿Build started 10/16/2013 8:11:43 PM.
+     1>Project "d:\rusky\visual studio 2012\Projects\HW5\HW5\HW5.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt list.cpp testList.cpp
+         testList.cpp
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.h(43): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.h(48): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.h(53): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\testlist.cpp(18): warning C4101: 'success' : unreferenced local variable
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\testlist.cpp(32): warning C4101: 'e2' : unreferenced local variable
+         list.cpp
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.h(43): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.h(48): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.h(53): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.cpp(35): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.cpp(90): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw5\hw5\list.cpp(114): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"d:\rusky\visual studio 2012\Projects\HW5\Debug\HW5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"d:\rusky\visual studio 2012\Projects\HW5\Debug\HW5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"d:\rusky\visual studio 2012\Projects\HW5\Debug\HW5.lib" /MACHINE:X86 Debug\testList.obj
+         Debug\list.obj
+         HW5.vcxproj -> d:\rusky\visual studio 2012\Projects\HW5\Debug\HW5.exe
+     1>Done Building Project "d:\rusky\visual studio 2012\Projects\HW5\HW5\HW5.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.67

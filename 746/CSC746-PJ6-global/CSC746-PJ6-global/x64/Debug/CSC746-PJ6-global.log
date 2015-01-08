@@ -1,0 +1,186 @@
+﻿Build started 5/16/2014 8:47:51 PM.
+     1>Project "D:\rusky\Visual Studio 2012\Projects\CSC746-PJ6-global\CSC746-PJ6-global\CSC746-PJ6-global.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\AMD APP SDK\2.9\include" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TC /errorReport:prompt Fdiff.c Fdutils.c
+         Fdutils.c
+     1>Fdutils.c(29): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+         Fdiff.c
+     1>Fdiff.c(102): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>Fdiff.c(126): error C2275: 'cl_platform_id' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(39) : see declaration of 'cl_platform_id'
+     1>Fdiff.c(126): error C2146: syntax error : missing ';' before identifier 'platform_id'
+     1>Fdiff.c(126): error C2065: 'platform_id' : undeclared identifier
+     1>Fdiff.c(126): warning C4047: '=' : 'int' differs in levels of indirection from 'void *'
+     1>Fdiff.c(127): error C2275: 'cl_device_id' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(40) : see declaration of 'cl_device_id'
+     1>Fdiff.c(127): error C2146: syntax error : missing ';' before identifier 'device_id'
+     1>Fdiff.c(127): error C2065: 'device_id' : undeclared identifier
+     1>Fdiff.c(127): warning C4047: '=' : 'int' differs in levels of indirection from 'void *'
+     1>Fdiff.c(128): error C2275: 'cl_uint' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl_platform.h(134) : see declaration of 'cl_uint'
+     1>Fdiff.c(128): error C2146: syntax error : missing ';' before identifier 'ret_num_devices'
+     1>Fdiff.c(128): error C2065: 'ret_num_devices' : undeclared identifier
+     1>Fdiff.c(129): error C2275: 'cl_uint' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl_platform.h(134) : see declaration of 'cl_uint'
+     1>Fdiff.c(129): error C2146: syntax error : missing ';' before identifier 'ret_num_platforms'
+     1>Fdiff.c(129): error C2065: 'ret_num_platforms' : undeclared identifier
+     1>Fdiff.c(130): error C2275: 'cl_int' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl_platform.h(133) : see declaration of 'cl_int'
+     1>Fdiff.c(130): error C2146: syntax error : missing ';' before identifier 'ret'
+     1>Fdiff.c(130): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(130): error C2065: 'platform_id' : undeclared identifier
+     1>Fdiff.c(130): warning C4047: 'function' : 'cl_platform_id *' differs in levels of indirection from 'int *'
+     1>Fdiff.c(130): warning C4024: 'clGetPlatformIDs' : different types for formal and actual parameter 2
+     1>Fdiff.c(130): error C2065: 'ret_num_platforms' : undeclared identifier
+     1>Fdiff.c(131): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(131): error C2065: 'platform_id' : undeclared identifier
+     1>Fdiff.c(131): warning C4047: 'function' : 'cl_platform_id' differs in levels of indirection from 'int'
+     1>Fdiff.c(131): warning C4024: 'clGetDeviceIDs' : different types for formal and actual parameter 1
+     1>Fdiff.c(132): error C2065: 'device_id' : undeclared identifier
+     1>Fdiff.c(132): warning C4047: 'function' : 'cl_device_id *' differs in levels of indirection from 'int *'
+     1>Fdiff.c(132): warning C4024: 'clGetDeviceIDs' : different types for formal and actual parameter 4
+     1>Fdiff.c(132): error C2065: 'ret_num_devices' : undeclared identifier
+     1>Fdiff.c(135): error C2275: 'cl_context' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(41) : see declaration of 'cl_context'
+     1>Fdiff.c(135): error C2146: syntax error : missing ';' before identifier 'context'
+     1>Fdiff.c(135): error C2065: 'context' : undeclared identifier
+     1>Fdiff.c(135): error C2065: 'device_id' : undeclared identifier
+     1>Fdiff.c(135): warning C4047: 'function' : 'const cl_device_id *' differs in levels of indirection from 'int *'
+     1>Fdiff.c(135): warning C4024: 'clCreateContext' : different types for formal and actual parameter 3
+     1>Fdiff.c(135): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(135): warning C4047: '=' : 'int' differs in levels of indirection from 'cl_context'
+     1>Fdiff.c(138): error C2275: 'cl_command_queue' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(42) : see declaration of 'cl_command_queue'
+     1>Fdiff.c(138): error C2146: syntax error : missing ';' before identifier 'command_queue'
+     1>Fdiff.c(138): error C2065: 'command_queue' : undeclared identifier
+     1>Fdiff.c(138): error C2065: 'context' : undeclared identifier
+     1>Fdiff.c(138): warning C4047: 'function' : 'cl_context' differs in levels of indirection from 'int'
+     1>Fdiff.c(138): warning C4024: 'clCreateCommandQueue' : different types for formal and actual parameter 1
+     1>Fdiff.c(138): error C2065: 'device_id' : undeclared identifier
+     1>Fdiff.c(138): warning C4047: 'function' : 'cl_device_id' differs in levels of indirection from 'int'
+     1>Fdiff.c(138): warning C4024: 'clCreateCommandQueue' : different types for formal and actual parameter 2
+     1>Fdiff.c(138): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(138): warning C4047: '=' : 'int' differs in levels of indirection from 'cl_command_queue'
+     1>Fdiff.c(148): error C2143: syntax error : missing ';' before 'type'
+     1>Fdiff.c(149): error C2275: 'cl_mem' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(43) : see declaration of 'cl_mem'
+     1>Fdiff.c(149): error C2146: syntax error : missing ';' before identifier 'device_u0'
+     1>Fdiff.c(149): error C2065: 'device_u0' : undeclared identifier
+     1>Fdiff.c(149): error C2065: 'context' : undeclared identifier
+     1>Fdiff.c(149): warning C4047: 'function' : 'cl_context' differs in levels of indirection from 'int'
+     1>Fdiff.c(149): warning C4024: 'clCreateBuffer' : different types for formal and actual parameter 1
+     1>Fdiff.c(149): error C2065: 'memory_size' : undeclared identifier
+     1>Fdiff.c(149): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(149): warning C4047: '=' : 'int' differs in levels of indirection from 'cl_mem'
+     1>Fdiff.c(150): error C2275: 'cl_mem' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(43) : see declaration of 'cl_mem'
+     1>Fdiff.c(150): error C2146: syntax error : missing ';' before identifier 'device_u1'
+     1>Fdiff.c(150): error C2065: 'device_u1' : undeclared identifier
+     1>Fdiff.c(150): error C2065: 'context' : undeclared identifier
+     1>Fdiff.c(150): warning C4047: 'function' : 'cl_context' differs in levels of indirection from 'int'
+     1>Fdiff.c(150): warning C4024: 'clCreateBuffer' : different types for formal and actual parameter 1
+     1>Fdiff.c(150): error C2065: 'memory_size' : undeclared identifier
+     1>Fdiff.c(150): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(150): warning C4047: '=' : 'int' differs in levels of indirection from 'cl_mem'
+     1>Fdiff.c(156): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Fdiff.c(167): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(167): error C2065: 'command_queue' : undeclared identifier
+     1>Fdiff.c(167): warning C4047: 'function' : 'cl_command_queue' differs in levels of indirection from 'int'
+     1>Fdiff.c(167): warning C4024: 'clEnqueueWriteBuffer' : different types for formal and actual parameter 1
+     1>Fdiff.c(167): error C2065: 'device_u1' : undeclared identifier
+     1>Fdiff.c(167): warning C4047: 'function' : 'cl_mem' differs in levels of indirection from 'int'
+     1>Fdiff.c(167): warning C4024: 'clEnqueueWriteBuffer' : different types for formal and actual parameter 2
+     1>Fdiff.c(167): error C2065: 'memory_size' : undeclared identifier
+     1>Fdiff.c(171): error C2275: 'cl_program' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(44) : see declaration of 'cl_program'
+     1>Fdiff.c(171): error C2146: syntax error : missing ';' before identifier 'program'
+     1>Fdiff.c(171): error C2065: 'program' : undeclared identifier
+     1>Fdiff.c(171): error C2065: 'context' : undeclared identifier
+     1>Fdiff.c(171): warning C4047: 'function' : 'cl_context' differs in levels of indirection from 'int'
+     1>Fdiff.c(171): warning C4024: 'clCreateProgramWithSource' : different types for formal and actual parameter 1
+     1>Fdiff.c(172): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(172): warning C4047: '=' : 'int' differs in levels of indirection from 'cl_program'
+     1>Fdiff.c(173): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(178): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(178): error C2065: 'program' : undeclared identifier
+     1>Fdiff.c(178): warning C4047: 'function' : 'cl_program' differs in levels of indirection from 'int'
+     1>Fdiff.c(178): warning C4024: 'clBuildProgram' : different types for formal and actual parameter 1
+     1>Fdiff.c(178): error C2065: 'device_id' : undeclared identifier
+     1>Fdiff.c(178): warning C4047: 'function' : 'const cl_device_id *' differs in levels of indirection from 'int *'
+     1>Fdiff.c(178): warning C4024: 'clBuildProgram' : different types for formal and actual parameter 3
+     1>Fdiff.c(179): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(190): error C2275: 'cl_kernel' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(45) : see declaration of 'cl_kernel'
+     1>Fdiff.c(190): error C2146: syntax error : missing ';' before identifier 'kernel'
+     1>Fdiff.c(190): error C2065: 'kernel' : undeclared identifier
+     1>Fdiff.c(190): error C2065: 'program' : undeclared identifier
+     1>Fdiff.c(190): warning C4047: 'function' : 'cl_program' differs in levels of indirection from 'int'
+     1>Fdiff.c(190): warning C4024: 'clCreateKernel' : different types for formal and actual parameter 1
+     1>Fdiff.c(190): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(190): warning C4047: '=' : 'int' differs in levels of indirection from 'cl_kernel'
+     1>Fdiff.c(192): error C2275: 'size_t' : illegal use of this type as an expression
+                 Fdiff.c : see declaration of 'size_t'
+     1>Fdiff.c(192): error C2146: syntax error : missing ';' before identifier 'global_size'
+     1>Fdiff.c(192): error C2065: 'global_size' : undeclared identifier
+     1>Fdiff.c(193): error C2275: 'size_t' : illegal use of this type as an expression
+                 Fdiff.c : see declaration of 'size_t'
+     1>Fdiff.c(193): error C2146: syntax error : missing ';' before identifier 'local_size'
+     1>Fdiff.c(193): error C2065: 'local_size' : undeclared identifier
+     1>Fdiff.c(196): error C2275: 'cl_mem' : illegal use of this type as an expression
+                 C:\Program Files (x86)\AMD APP SDK\2.9\include\CL/cl.h(43) : see declaration of 'cl_mem'
+     1>Fdiff.c(196): error C2146: syntax error : missing ';' before identifier 'temp'
+     1>Fdiff.c(196): error C2065: 'temp' : undeclared identifier
+     1>Fdiff.c(196): warning C4047: '=' : 'int' differs in levels of indirection from 'void *'
+     1>Fdiff.c(203): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(203): error C2065: 'kernel' : undeclared identifier
+     1>Fdiff.c(203): warning C4047: 'function' : 'cl_kernel' differs in levels of indirection from 'int'
+     1>Fdiff.c(203): warning C4024: 'clSetKernelArg' : different types for formal and actual parameter 1
+     1>Fdiff.c(203): error C2065: 'device_u0' : undeclared identifier
+     1>Fdiff.c(204): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(204): error C2065: 'kernel' : undeclared identifier
+     1>Fdiff.c(204): warning C4047: 'function' : 'cl_kernel' differs in levels of indirection from 'int'
+     1>Fdiff.c(204): warning C4024: 'clSetKernelArg' : different types for formal and actual parameter 1
+     1>Fdiff.c(204): error C2065: 'device_u1' : undeclared identifier
+     1>Fdiff.c(205): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(205): error C2065: 'kernel' : undeclared identifier
+     1>Fdiff.c(205): warning C4047: 'function' : 'cl_kernel' differs in levels of indirection from 'int'
+     1>Fdiff.c(205): warning C4024: 'clSetKernelArg' : different types for formal and actual parameter 1
+     1>Fdiff.c(206): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(206): error C2065: 'kernel' : undeclared identifier
+     1>Fdiff.c(206): warning C4047: 'function' : 'cl_kernel' differs in levels of indirection from 'int'
+     1>Fdiff.c(206): warning C4024: 'clSetKernelArg' : different types for formal and actual parameter 1
+     1>Fdiff.c(210): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(210): error C2065: 'command_queue' : undeclared identifier
+     1>Fdiff.c(210): warning C4047: 'function' : 'cl_command_queue' differs in levels of indirection from 'int'
+     1>Fdiff.c(210): warning C4024: 'clEnqueueNDRangeKernel' : different types for formal and actual parameter 1
+     1>Fdiff.c(210): error C2065: 'kernel' : undeclared identifier
+     1>Fdiff.c(210): warning C4047: 'function' : 'cl_kernel' differs in levels of indirection from 'int'
+     1>Fdiff.c(210): warning C4024: 'clEnqueueNDRangeKernel' : different types for formal and actual parameter 2
+     1>Fdiff.c(211): error C2065: 'global_size' : undeclared identifier
+     1>Fdiff.c(211): warning C4133: 'function' : incompatible types - from 'int *' to 'const size_t *'
+     1>Fdiff.c(211): error C2065: 'local_size' : undeclared identifier
+     1>Fdiff.c(212): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(214): error C2065: 'temp' : undeclared identifier
+     1>Fdiff.c(214): error C2065: 'device_u0' : undeclared identifier
+     1>Fdiff.c(215): error C2065: 'device_u0' : undeclared identifier
+     1>Fdiff.c(215): error C2065: 'device_u1' : undeclared identifier
+     1>Fdiff.c(216): error C2065: 'device_u1' : undeclared identifier
+     1>Fdiff.c(216): error C2065: 'temp' : undeclared identifier
+     1>Fdiff.c(221): error C2143: syntax error : missing ';' before 'type'
+     1>Fdiff.c(222): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(222): error C2065: 'command_queue' : undeclared identifier
+     1>Fdiff.c(222): warning C4047: 'function' : 'cl_command_queue' differs in levels of indirection from 'int'
+     1>Fdiff.c(222): warning C4024: 'clEnqueueReadBuffer' : different types for formal and actual parameter 1
+     1>Fdiff.c(222): error C2065: 'device_u1' : undeclared identifier
+     1>Fdiff.c(222): warning C4047: 'function' : 'cl_mem' differs in levels of indirection from 'int'
+     1>Fdiff.c(222): warning C4024: 'clEnqueueReadBuffer' : different types for formal and actual parameter 2
+     1>Fdiff.c(235): error C2065: 'ret' : undeclared identifier
+     1>Fdiff.c(235): fatal error C1003: error count exceeds 100; stopping compilation
+         Generating Code...
+     1>Done Building Project "D:\rusky\Visual Studio 2012\Projects\CSC746-PJ6-global\CSC746-PJ6-global\CSC746-PJ6-global.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.07

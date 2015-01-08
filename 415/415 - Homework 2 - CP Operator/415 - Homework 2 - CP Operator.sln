@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "415 - Homework 2 - CP Operator", "415 - Homework 2 - CP Operator\415 - Homework 2 - CP Operator.vcxproj", "{9E014C3E-A82B-4FE3-BC5D-E1F6A9FC5DAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E014C3E-A82B-4FE3-BC5D-E1F6A9FC5DAE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E014C3E-A82B-4FE3-BC5D-E1F6A9FC5DAE}.Debug|Win32.Build.0 = Debug|Win32
+		{9E014C3E-A82B-4FE3-BC5D-E1F6A9FC5DAE}.Release|Win32.ActiveCfg = Release|Win32
+		{9E014C3E-A82B-4FE3-BC5D-E1F6A9FC5DAE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

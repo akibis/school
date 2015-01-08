@@ -1,0 +1,39 @@
+OUTPUT #1
+
+Drawing a figure.
+
+Derived class Triangle object calling center().
+Centering a figure.
+Erasing a figure.
+Drawing a figure.
+Drawing a figure.
+
+Derived class Rectangle object calling center().
+Centering a figure.
+Erasing a figure.
+Drawing a figure.
+Press any key to continue . . .
+
+
+OUTPUT #2
+
+Drawing triangle.
+
+Derived class Triangle object calling center().
+Centering a figure.
+Erasing triangle.
+Drawing triangle.
+Drawing rectangle.
+
+Derived class Rectangle object calling center().
+Centering a figure.
+Erasing rectangle.
+Drawing rectangle.
+Press any key to continue . . .
+
+
+
+
+
+The difference between the two outputs is due to declaring the draw and erase functions virtual
+in the figure class. This allows the Triangle and Rectangle classes to override the inherited functions.

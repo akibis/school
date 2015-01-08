@@ -1,0 +1,70 @@
+Benchmark                        Result  Run Time  Build Time
+-------------------------------------------------------------
+Memory Read                   6185 MB/s    703 ms            
+- Pinned                      6185 MB/s      5 ms            
+- Pageable                    5187 MB/s      6 ms            
+Memory Write                  4633 MB/s    704 ms            
+- Pinned                      4633 MB/s      6 ms            
+- Pageable                    4009 MB/s      7 ms            
+Memory Copy                 107073 MB/s   6531 ms            
+- 15 MB Block                99843 MB/s      0 ms            
+- 32 MB Block               104615 MB/s      1 ms            
+- 64 MB Block               107073 MB/s      1 ms            
+- 128 MB Block              104916 MB/s      2 ms            
+- 256 MB Block                7000 MB/s     73 ms            
+- 512 MB Block                7112 MB/s    144 ms            
+- 766 MB Block                7022 MB/s    218 ms            
+Single-Precision FLOPS      1746 GFLOPS   7015 ms            
+- float1                     439 GFLOPS    626 ms      282 ms
+- float2                     877 GFLOPS    627 ms      140 ms
+- float4                    1746 GFLOPS    630 ms       78 ms
+- float8                    1732 GFLOPS    635 ms       78 ms
+- float16                   1696 GFLOPS    648 ms       78 ms
+Double-Precision FLOPS     436.6 GFLOPS   8094 ms            
+- double1                  436.6 GFLOPS    630 ms      281 ms
+- double2                  436.2 GFLOPS    630 ms      297 ms
+- double4                  428.3 GFLOPS    642 ms      281 ms
+- double8                  410.1 GFLOPS    670 ms      281 ms
+- double16                 380.8 GFLOPS    722 ms      297 ms
+24-bit Integer IOPS         437.7 GIOPS   6859 ms            
+- int1                      218.9 GIOPS    628 ms       47 ms
+- int2                      435.4 GIOPS    631 ms       31 ms
+- int4                      437.7 GIOPS    628 ms       46 ms
+- int8                      427.5 GIOPS    643 ms       78 ms
+- int16                     415.0 GIOPS    662 ms      203 ms
+32-bit Integer IOPS         436.8 GIOPS  12812 ms            
+- int1                      218.6 GIOPS    629 ms     6062 ms
+- int2                      435.9 GIOPS    631 ms       47 ms
+- int4                      436.8 GIOPS    629 ms       47 ms
+- int8                      429.2 GIOPS    640 ms       78 ms
+- int16                     416.2 GIOPS    660 ms      125 ms
+64-bit Integer IOPS         88.06 GIOPS  15515 ms            
+- long1                     87.58 GIOPS    785 ms     5968 ms
+- long2                     88.06 GIOPS    780 ms      109 ms
+- long4                     87.05 GIOPS    789 ms      187 ms
+- long8                     84.06 GIOPS    818 ms      359 ms
+- long16                    78.43 GIOPS    876 ms      719 ms
+SHA-1 Hash                   10461 MB/s  12859 ms            
+- 512 blocks                  1183 MB/s    846 ms      375 ms
+- 1024 blocks                 2351 MB/s    851 ms            
+- 2048 blocks                 4682 MB/s    854 ms            
+- 4096 blocks                 8887 MB/s    900 ms            
+- 8192 blocks                10461 MB/s    765 ms            
+- 16384 blocks                9169 MB/s    873 ms            
+- 32768 blocks                 643 MB/s    778 ms            
+- 65536 blocks                 577 MB/s    867 ms            
+Single-Precision Julia        245.2 FPS  10500 ms            
+- float1 break                 71.7 FPS    893 ms       46 ms
+- float1 stay / unroll 3      210.0 FPS    609 ms       31 ms
+- float2 stay / unroll 3      223.1 FPS    574 ms       32 ms
+- float4 stay / unroll 3      228.7 FPS    560 ms       32 ms
+- float8 stay / unroll 3      159.9 FPS    800 ms       62 ms
+- float1 stay / unroll 9      212.0 FPS    604 ms       32 ms
+- float2 stay / unroll 9      245.2 FPS    522 ms       31 ms
+- float4 stay / unroll 9      243.8 FPS    525 ms       47 ms
+Double-Precision Mandel       119.7 FPS   6672 ms            
+- double1 break                54.1 FPS    591 ms       31 ms
+- double1 stay / unroll 3     106.6 FPS    600 ms       31 ms
+- double2 stay / unroll 3      73.5 FPS    871 ms       63 ms
+- double1 stay / unroll 9     119.7 FPS    535 ms       47 ms
+- double2 stay / unroll 9      57.1 FPS    560 ms       47 ms

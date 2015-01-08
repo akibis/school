@@ -1,0 +1,73 @@
+/* 
+ * File:   linux_shell.c
+ * Author: netdom
+ *
+ * Created on September 28, 2014, 7:40 PM
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define EXIT_SUCCESS 0
+#define EXIT_FAILURE 1
+#define BUFFER_SIZE 2048
+#define MAX_ARGS 20
+/*
+ * 
+ */
+int main() {
+
+    char input[BUFFER_SIZE]; // single string of user args
+    const char s[2] = "\n "; // string delimiter
+    char* token; // single token from string
+    int myargc = 0; // number of args
+    char** myargv;
+    pid_t cpid = 0;
+    int status = 0, error;
+
+    
+    
+    while (1) {
+        
+        // reset argument memory
+        myargv = (char**)calloc(MAX_ARGS, sizeof(char*));
+        myargc = 0;
+        
+        // start shell gui and get user input
+        printf("netdom> ");
+        fgets(input, BUFFER_SIZE, stdin);
+        token = strtok(input, s);   // tokenize user input
+
+        // fork process for each new input
+        while (token != NULL) {
+            myargv[myargc++] = token;
+            token = strtok(NULL, s);
+            if (strcmp(myargv[0], "exit") == 0) {   // exit shell upon keyword
+                printf("<3\n");
+                exit(EXIT_SUCCESS);
+            }
+
+            if ((cpid = fork()) < 0) {  
+
+                perror("Error sporking process o_O\n");
+                exit(EXIT_FAILURE);
+            }
+            else if (cpid == 0) {   // limit to only 1 shell process
+
+                if (error = execvp(*myargv, myargv) < 0) {
+                    perror("EXEC ERROR\n");
+                    exit(EXIT_FAILURE);
+                }
+
+            } else {
+                while (wait(&status) != cpid);  // have parent wait for child to finish
+            }
+            //printf("myargv[%d]: %s\n", myargc - 1, myargv[myargc - 1]);
+        }
+        free(myargv);   // free memory
+    }
+
+    return (EXIT_SUCCESS);
+}
+

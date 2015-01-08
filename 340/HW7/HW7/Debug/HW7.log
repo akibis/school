@@ -1,0 +1,23 @@
+﻿Build started 11/14/2013 1:20:01 PM.
+     1>Project "D:\rusky\Visual Studio 2012\Projects\HW7\HW7\HW7.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt list.cpp testList.cpp
+         testList.cpp
+     1>d:\rusky\visual studio 2012\projects\hw7\hw7\list.h(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw7\hw7\list.h(50): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw7\hw7\testlist.cpp(36): warning C4101: 'e2' : unreferenced local variable
+         list.cpp
+     1>d:\rusky\visual studio 2012\projects\hw7\hw7\list.h(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw7\hw7\list.h(50): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw7\hw7\list.cpp(72): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>d:\rusky\visual studio 2012\projects\hw7\hw7\list.cpp(115): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\rusky\Visual Studio 2012\Projects\HW7\Debug\HW7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\rusky\Visual Studio 2012\Projects\HW7\Debug\HW7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\rusky\Visual Studio 2012\Projects\HW7\Debug\HW7.lib" /MACHINE:X86 Debug\list.obj
+         Debug\testList.obj
+         HW7.vcxproj -> D:\rusky\Visual Studio 2012\Projects\HW7\Debug\HW7.exe
+     1>Done Building Project "D:\rusky\Visual Studio 2012\Projects\HW7\HW7\HW7.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.95
